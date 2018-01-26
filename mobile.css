@@ -1,0 +1,90 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  color: #808285;
+  padding: 10px;
+}
+
+.dawn {
+  color: #ed1848;
+}
+
+.the-m {
+  color: #5f91cc;
+}
+
+.tagline {
+  color: #a7bf4d;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+}
+
+li {
+  display: inline-block;
+  padding: 0 3px;
+  
+}
+
+li p {
+  position: relative;
+  left: -9999px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.author-icon {
+  float: left;
+  width: 30%;
+  margin: 0 10px 5px 0;
+}
+
+/* box-shadow tested on cssmatic.com */
+main {
+  text-align: center;
+}
+
+
+.page {
+  position: absolute;
+  background-color: #fffdf5;
+  width: 80%;
+  margin: 10px auto;
+  margin-top: 30px;
+  padding: 5px;
+  border: 1px solid rgba(217,215,208,0.5);
+  -webkit-box-shadow: 2px 2px 4px -1px rgba(66,66,66,0.5);
+  -moz-box-shadow: 2px 2px 4px -1px rgba(66,66,66,0.5);
+  box-shadow: 2px 2px 4px -1px rgba(66,66,66,0.5);
+}
+
+.bottom-page {
+  color: #fffdf5;
+  z-index: -2;
+  transform: rotate(1.5deg);
+}
+
+.bottom-page .author-icon{
+  visibility: hidden;
+}
+
+.middle-page {
+  color: #fffdf5;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+.middle-page .author-icon{
+  visibility: hidden;
+}

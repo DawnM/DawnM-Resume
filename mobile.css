@@ -50,12 +50,13 @@ main {
   margin: 0 10px 5px 0;
 }
 
-/* box-shadow tested on cssmatic.com */
 main {
-  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
+/* box-shadow tested on cssmatic.com */
 .page {
   position: absolute;
   background-color: #fffdf5;

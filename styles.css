@@ -6,12 +6,6 @@ body {
   color: #808285;
 }
 
-.container {
-  min-height: 100%
-  padding: 0;
-  margin: 0;
-}
-
 /* ---------- styles for header ---------- */
 
 .dawn {
@@ -26,9 +20,32 @@ body {
   color: #a7bf4d;
 }
 
+.navbar {
+  background-color: unset;
+  padding: 10px;
+}
 
-.icon {
-  display: inline-block;
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+small {
+  display: block;
+  line-height: 2em;
+}
+
+.top-nav {
+  display: flex;
+}
+
+.navbar-header {
+  min-width: 90%;
+}
+
+.navbar-right {
+  position: static;
+  float: right;
 }
 
 /* ---------- styles for main content ---------- */
@@ -89,18 +106,13 @@ main {
 /* ---------- styles for footer ---------- */
 
 footer {
-  height: 12%;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
 }
 
-nav p {
-  position: relative;
-  left: -9999px;
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-btn {
+  padding: 0;
 }

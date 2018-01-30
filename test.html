@@ -16,15 +16,15 @@
 
 <body>
   <!-- Header includes my name, tagline & button to switch to pages optimised for the visually impaired -->
-  <header>
+  <header class="row">
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container-fluid top-nav">
         <div class="navbar-header">
-          <a class="navbar-brand top-nav" href="#"><span class="title"><span class="dawn">Dawn</span><span class="the-m">M</span></span><small><span class="tagline">&lt; Developer + Designer &gt;</span></small></a>
+          <a class="navbar-brand navbar-left" href="#"><span class="title"><span class="dawn">Dawn</span><span class="the-m">M</span></span><small><span class="tagline">&lt; Developer + Designer &gt;</span></small></a>
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><img src=""><p class="sr-only">Visual Impairment Button</p></a></li>
+          <li><a href="#"><img src="images/eye-icon-s.png"><p class="sr-only">Visual Impairment Button</p></a></li>
         </ul>
       </div>
     </nav> 
@@ -52,11 +52,14 @@
 
   <!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show to the left under the author-icon  -->
   <footer class="row">
-    <nav class="col-xs-12 ">
-      <a href="index.html" class="icon"><img src="images/me-icon-ps.png" alt="me icon"><p>Me</p></a>
-      <a href="studies.html" class="icon"><img src="images/study-icon-s.png" alt="studies icon"><p>Studies</p></a>
-      <a href="skills.html" class="icon"><img src="images/skills-icon-s.png" alt="skills icon"><p>Skills</p></a>
-      <a href="work.html" class="icon"><img src="images/work-icon-s.png" alt="work icon"><p>Work History</p></a>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container-fluid">
+        <button type="button" class="btn btn-default navbar-btn"><img src="images/me-icon-ps.png" alt="me icon"><p class="sr-only">Me</p></button>
+        <button type="button" class="btn btn-default navbar-btn"><img src="images/study-icon-s.png" alt="studies icon"><p class="sr-only">tudies</p></button>
+        <button type="button" class="btn btn-default navbar-btn"><img src="images/skills-icon-s.png" alt="skills icon"><p class="sr-only">Skills</p></button>
+        <button type="button" class="btn btn-default navbar-btn"><img src="images/work-icon-s.png" alt="work icon"><p class="sr-only">Portfolio</p></button>
+        <button type="button" class="btn btn-default navbar-btn"><img src="images/work-icon-s.png" alt="work icon"><p class="sr-only">Work History</p></button>
+      </div>
   </nav>
   </footer>
   

@@ -1,0 +1,149 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #262525;
+  background-image: url("images/dark_wood_@2X.png");
+  background-repeat: repeat;
+  color: #1b1b1b;
+  font-size: 1.2em;
+}
+
+/* ---------- styles for header ---------- */
+
+.dawn {
+  color: #ed1848;
+}
+
+.the-m {
+  color: #5f91cc;
+}
+
+.tagline {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #a7bf4d;
+}
+
+header .navbar {
+  background-color: transparent;
+  padding-left: 10px;
+  border-radius: 0;
+}
+
+.title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+small {
+  display: block;
+  line-height: 2em;
+}
+
+.top-nav {
+  display: flex;
+}
+
+.navbar-header {
+  min-width: 90%;
+}
+
+.navbar-right {
+  position: static;
+  float: right;
+}
+
+/* ---------- styles for main content ---------- */
+
+main {
+  padding: 10px 0;
+}
+
+.author-icon {
+  float: left;
+  width: 30%;
+  margin: 0 10px 5px 0;
+}
+
+.papers {
+  position: relative;
+}
+
+/* box-shadow tested on cssmatic.com */
+.page {
+  position: absolute; 
+  background-color: #fffdf5;
+  padding: 5px;
+  border: 1px solid rgba(217,215,208,0.5);
+  -webkit-box-shadow: 2px 2px 4px -1px rgba(66,66,66,0.5);
+  -moz-box-shadow: 2px 2px 4px -1px rgba(66,66,66,0.5);
+  box-shadow: 1px 1px 6px 2px rgba(66,66,66,0.5);
+  overflow: auto;
+}
+
+.page-img {
+  max-width: 100%;
+  padding: 4px 0;
+}
+
+.bottom-page {
+  color: #fffdf5;
+  z-index: -2;
+  transform: rotate(1.5deg);
+}
+
+.bottom-page .page-img{
+  visibility: hidden;
+}
+
+.middle-page {
+  color: #fffdf5;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+.middle-page .page-img{
+  visibility: hidden;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Volkhov', serif;
+  text-align: center;
+}
+
+li.code-institute {
+  list-style-image: url('images/bullet-green-m.png');
+}
+
+li.code-school {
+  list-style-image: url('images/bullet-green-l.png');
+}
+
+li.shaw-academy {
+  list-style-image: url('images/bullet-green-d.png');
+}
+
+ .web-dev{
+  color: #3c3f2d;
+ }
+
+
+/* ---------- styles for footer ---------- */
+
+footer .navbar {
+  border-radius: 0;
+  background-color: transparent;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-btn {
+  padding: 0;
+}

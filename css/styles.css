@@ -1,7 +1,7 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #262525;
-  background-image: url("images/dark_wood_@2X.png");
+  background-image: url("../images/dark_wood_@2X.png");
   background-repeat: repeat;
   color: #1b1b1b;
   font-size: 1.2em;
@@ -12,7 +12,7 @@ body {
   height: 15%;
 }
 
-/* ---------- styles for header ---------- */
+/* ---------------- styles for header  ---------------- */
 
 header .navbar {
   background-color: transparent;
@@ -38,7 +38,7 @@ header .navbar {
 }
 
 
-/* ---------- styles for main content ---------- */
+/* ---------------- styles for main content ---------------- */
 
 main {
   padding: 10px 0;
@@ -60,7 +60,7 @@ main {
   position: relative;
 }
 
-/* box-shadow tested on cssmatic.com */
+/* ---------------- box-shadow tested on cssmatic.com ---------------- */
 .page {
   position: absolute; 
   background-color: #fffdf5;
@@ -73,13 +73,19 @@ main {
   z-index: auto;
 }
 
-.page-img {
-  max-width: 100%;
+.pie {
+  max-width: 80%;
   padding: 4px 0;
+  text-align: center;
+}
+
+.pie-bullet {
+  height: 1em;
+  margin-right: 1em;
 }
 
 .bottom-page {
-  color: #fffdf5;
+  color: transparent;
   z-index: -2;
   transform: rotate(1.5deg);
 }
@@ -89,40 +95,68 @@ main {
 }
 
 .middle-page {
-  color: #fffdf5;
+  color: transparent;
   z-index: -1;
   transform: rotate(-2deg);
 }
 
-.middle-page .page-img{
+.middle-page .author-img{
   visibility: hidden;
 }
 
-h1 {
+/* ---------------- study page styles ---------------- */
+.panel-heading {
   font-size: 1.5em;
   font-family: 'Volkhov', serif;
   text-align: center;
 }
 
-li.code-institute {
-  list-style-image: url('images/bullet-green-m.png');
+.studies-web {
+  color: #3c3f2d;
 }
 
-li.code-school {
-  list-style-image: url('images/bullet-green-l.png');
-}
-
-li.shaw-academy {
-  list-style-image: url('images/bullet-green-d.png');
-}
-
- .web-dev{
+ div.panel.panel-default.studies-web div.panel-heading {
   color: #3c3f2d;
  }
 
+.studies-design {
+  color: #720321;
+ }
+
+div.panel.panel-default.studies-design div.panel-heading {
+  color: #720321;
+ }
+
+.studies-general {
+  color: #404b59;
+ }
+
+div.panel.panel-default.studies-general div.panel-heading {
+  color: #404b59;
+ }
+
+div.panel.panel-default {
+  background-color: #fffdf5;
+  padding: 5px;
+  border: 1px solid rgba(217,215,208,0.5);
+  -webkit-box-shadow: 2px 2px 4px -1px rgba(66,66,66,0.5);
+  -moz-box-shadow: 2px 2px 4px -1px rgba(66,66,66,0.5);
+  box-shadow: 1px 1px 6px 2px rgba(66,66,66,0.5);
+  border-radius: 0;
+ }
+
+div.panel.panel-default div.panel-heading {
+  background-color: transparent;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em;
+}
 
 
-/* ---------- styles for footer ---------- */
+/* ---------------- styles for footer ---------------- */
 
 footer .navbar {
   border-radius: 0;

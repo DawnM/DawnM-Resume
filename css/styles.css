@@ -7,20 +7,12 @@ body {
   font-size: 1.2em;
 }
 
+.navbar-btn {
+  width: 15%;
+  height: 15%;
+}
+
 /* ---------- styles for header ---------- */
-
-.dawn {
-  color: #ed1848;
-}
-
-.the-m {
-  color: #5f91cc;
-}
-
-.tagline {
-  font-family: 'Ubuntu Mono', monospace;
-  color: #a7bf4d;
-}
 
 header .navbar {
   background-color: transparent;
@@ -28,28 +20,23 @@ header .navbar {
   border-radius: 0;
 }
 
-.title {
-  font-size: 1.8em;
-  font-weight: bold;
-}
-
-small {
-  display: block;
-  line-height: 2em;
+.navbar-brand {
+  min-height: 100%;
+  width: 80%;
+  padding: 10px;
 }
 
 .top-nav {
   display: flex;
+  max-height: 100px;
 }
 
 .navbar-header {
   min-width: 90%;
+  position: static;
+  float: left;
 }
 
-.navbar-right {
-  position: static;
-  float: right;
-}
 
 /* ---------- styles for main content ---------- */
 
@@ -134,83 +121,6 @@ li.shaw-academy {
  }
 
 
-/* ---------- styles for work timeline ---------- */
-/* original code: Copyright (c) 2018 by Zoë (https://codepen.io/z-/pen/bwPBjY) - adapted for my purposes */
-
-body main .page:before {
-  content: '';
-  position: fixed;
-  top: 0px;
-  left: 50%;
-  bottom: 0px;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 4px;
-  background-color: #5f91cc;
-}
-body main .page .entries {
-  width: calc(100% - 80px);
-  max-width: 800px;
-  margin: auto;
-  position: relative;
-  left: -5px;
-}
-body main .page .entries .entry {
-  width: calc(50% - 80px);
-  float: left;
-  padding: 20px;
-  clear: both;
-  text-align: right;
-}
-body main .page .entries .entry:not(:first-child) {
-  margin-top: -60px;
-}
-body main .page .entries .entry .title {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  position: relative;
-  color: #404b59;
-}
-body main .page .entries .entry .title:before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 4px solid #a7bf4d ;
-  background-color: #fffdf5;
-  border-radius: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: -73px;
-  z-index: 1000;
-}
-body main .page .entries .entry .title.big:before {
-  width: 24px;
-  height: 24px;
-  -webkit-transform: translate(8px, -50%);
-  transform: translate(8px, -50%);
-    border: 4px solid #f20746;
-}
-body main .page .entries .entry .body a {
-  line-height: 1em;
-  color: #4670a6;
-}
-body main .page small {
-  color: #a4c0e4;
-}
-body main .page .entries .entry:nth-child(2n) {
-  text-align: left;
-  float: right;
-}
-body main .page .entries .entry:nth-child(2n) .title:before {
-  left: -63px;
-}
-body main .page .entries .entry:nth-child(2n) .title.big:before {
-  -webkit-transform: translate(-8px, -50%);
-  transform: translate(-8px, -50%);
-}
-
 
 /* ---------- styles for footer ---------- */
 
@@ -227,6 +137,7 @@ footer {
 .bottom-nav {
   display: flex;
   justify-content: space-around;
+  max-height: 100px;
 }
 
 .navbar-btn {

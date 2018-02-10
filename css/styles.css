@@ -90,7 +90,7 @@ main {
   transform: rotate(1.5deg);
 }
 
-.bottom-page .page-img{
+.bottom-page .author-img {
   visibility: hidden;
 }
 
@@ -100,7 +100,7 @@ main {
   transform: rotate(-2deg);
 }
 
-.middle-page .author-img{
+.middle-page .author-img {
   visibility: hidden;
 }
 

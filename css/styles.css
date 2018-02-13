@@ -1,6 +1,6 @@
 body {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #262525;
+  background-color: #151414;
   background-image: url("../images/dark_wood_@2X.png");
   background-repeat: repeat;
   color: #1b1b1b;
@@ -15,13 +15,10 @@ body {
 /* ---------------- styles for header  ---------------- */
 
 header .navbar {
-  background-color: transparent;
+  background-color: #151414;
+  background-image: url("../images/dark_wood_@2X-flipped.png");
   padding-left: 10px;
   border-radius: 0;
-  position: fixed;
-  top: 0;
-  height: 70px;
-  width: 100%;
 }
 
 .navbar-brand {
@@ -42,16 +39,10 @@ header .navbar {
 }
 
 
-/* ---------------- styles for main content ---------------- */
+/* ---------------- INDEX MAIN ---------------- */
 
 main {
   padding: 10px 0;
-  overflow: scroll;
-  position: absolute;
-  top: 70px;
-  bottom: 70px;
-  left: 0;
-  right: 0;
 }
 
 .author-img {
@@ -70,7 +61,7 @@ main {
   position: relative;
 }
 
-/* ---------------- box-shadow tested on cssmatic.com ---------------- */
+/* ---------------- papers box-shadow tested on cssmatic.com ---------------- */
 .page {
   position: absolute; 
   background-color: #fffdf5;
@@ -114,7 +105,7 @@ main {
   visibility: hidden;
 }
 
-/* ---------------- study page styles ---------------- */
+/* ---------------- STUDY PAGE ---------------- */
 .panel-heading {
   font-size: 1.5em;
   font-family: 'Volkhov', serif;
@@ -165,19 +156,46 @@ div.panel.panel-default div.panel-heading {
   padding: 0.5em;
 }
 
+/* ---------------- SOCIAL LINKS ---------------- */
+/* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
 
-/* ---------------- styles for footer ---------------- */
+
+ul.list-inline.social-links {
+  text-align: center;
+}
+
+.social-links li a i {
+  width: 40px;
+  height: 40px;
+  padding: 16px 0;
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 7px;
+  text-align: center;
+  color: #fffdf5;
+  background: #151414;
+}
+
+.social-links li a i:hover{
+  background: #a7bf4d;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+
+/* ---------------- FOOTER ---------------- */
 
 footer .navbar {
   border-radius: 0;
-  background-color: transparent;
+  background-color: #151414;
+  background-image: url("../images/dark_wood_@2X-flipped.png");
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  height: 70px;
-  width: 100%;
 }
 
 .bottom-nav {
@@ -188,3 +206,40 @@ footer {
 .navbar-btn {
   padding: 0;
 }
+
+
+/* ---------------- MEDIA QUIERIES ---------------- */
+
+@media(min-width: 992px) {
+
+.social-links li a i {
+  width: 40px;
+  height: 40px;
+  padding: 16px 0;
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 7px;
+  text-align: center;
+  color: #151414;
+  background: #fffdf5;
+}
+
+.social-links li a i:hover{
+  background: #a7bf4d;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

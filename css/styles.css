@@ -15,42 +15,30 @@ header .navbar {
   background-color: #151414;
   background-image: url("../images/dark_wood_@2X-flipped.png");
   background-size: contain;
-  padding-left: 10px;
   border-radius: 0;
-  height: 10%;
 }
 
 .navbar-brand {
-  min-height: 100%;
   width: 80%;
-  padding: 10px;
-}
-
-.top-nav {
-  display: flex;
-  max-height: 100px;
+  float: left;
 }
 
 .navbar-header {
-  min-width: 90%;
-  position: static;
-  float: left;
+  min-width: 100%;
+
 }
 
 .navbar-btn {
   width: 15%;
-  height: 15%;
-}
-
-header nav button {
-  width: 16vw;
+  float: right;
+  margin-right: 5px;
 }
 
 /* ---------------- INDEX MAIN ---------------- */
 
 main {
   padding: 10px 0;
-  margin: 20% 0;
+  margin: 22% 0;
 }
 
 .author-img {
@@ -59,13 +47,7 @@ main {
   margin: 0 10px 5px 0;
 }
 
-.page-img {
-  width: 80%;
-  text-align: center;
-  margin: 10px;
-}
-
-.papers {
+.paper-stack {
   position: relative;
 }
 
@@ -73,6 +55,7 @@ main {
 /* ---------------- papers box-shadow tested on cssmatic.com ---------------- */
 .page {
   position: absolute; 
+  left: 0;
   background-color: #fffdf5;
   padding: 5px;
   border: 1px solid rgba(217,215,208,0.5);
@@ -83,24 +66,17 @@ main {
   z-index: auto;
 }
 
-.pie {
-  max-width: 80%;
-  padding: 4px 0;
-  text-align: center;
-}
-
-.pie-bullet {
-  height: 1em;
-  margin-right: 1em;
-}
-
 .bottom-page {
   color: transparent;
   z-index: -2;
   transform: rotate(1.5deg);
 }
 
-.bottom-page .page-img{
+.bottom-page .author-img{
+  visibility: hidden;
+}
+
+.bottom-page .social-links {
   visibility: hidden;
 }
 
@@ -114,6 +90,12 @@ main {
   visibility: hidden;
 }
 
+.middle-page .social-links {
+  visibility: hidden;
+}
+
+
+
 /* ---------------- SOCIAL LINKS ---------------- */
 /* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
 
@@ -124,30 +106,32 @@ ul.list-inline.social-links {
   justify-content: space-around;
 }
 
-.social-links li a i {
-  width: 40px;
-  height: 40px;
-  padding: 16px 0;
-  border-radius: 50%;
-  font-size: 17px;
-  line-height: 7px;
-  text-align: center;
-  color: #fffdf5;
-  background: #151414;
-}
-
-.social-links li a i:hover{
+.social-links li a img:hover{
   /* overlay here */
 }
 
 
 main .social-links img {
-  width: 12vw;
+  width: 50px;
+  padding-top: 5px;
 }
 
 
 
 /* ---------------- STUDY PAGE ---------------- */
+.study-panels {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.study-panels .panel {
+  flex-grow: 1;
+  margin: 0 30px 30px 30px;
+  flex-basis: 310px;
+}
+
 .panel-heading {
   font-size: 1.5em;
   font-family: 'Volkhov', serif;
@@ -219,9 +203,19 @@ div.panel.panel-default div.panel-heading {
   min-height: 35vh;
 }
 
+.pie {
+  max-width: 90%;
+  padding: 4px 0;
+  text-align: center;
+}
+
+.pie-bullet {
+  height: 1em;
+  margin-right: 1em;
+}
+
 
 /* ------------- INDUSTRY SECTORS ------------- */
-
 
 
 
@@ -314,7 +308,7 @@ footer nav button {
 
 /* ---------------- MEDIA QUIERIES ---------------- */
 
-@media (min-width: @screen-lg-min) {
+@media screen and (min-width: 992px) {
 
 .social-links li a i {
   width: 40px;
@@ -350,7 +344,52 @@ footer nav button {
 
 }
 
+@media screen and (min-width: 656px) {
+  html {
+    font-size: 16px;
+  }
 
+  .navbar-brand {
+  width: 60%;
+  float: left;
+  }
+
+  .navbar-header {
+  min-width: 100%;
+
+  }
+
+  .navbar-btn {
+  width: 10%;
+  margin: 15px;
+  }
+
+  main {
+    margin: 18% 0;
+  }
+
+  .study-panels .panel {
+    flex-basis: 400px;
+    max-width: 600px;
+  }
+
+  .languages-img {
+    margin-bottom: 2vh;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
 
 
 

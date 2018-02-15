@@ -2,23 +2,22 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #151414;
   background-image: url("../images/dark_wood_@2X.png");
+  background-size: contain;
   background-repeat: repeat;
   color: #1b1b1b;
   font-size: 1.2em;
 }
 
-.navbar-btn {
-  width: 15%;
-  height: 15%;
-}
 
 /* ---------------- styles for header  ---------------- */
 
 header .navbar {
   background-color: #151414;
   background-image: url("../images/dark_wood_@2X-flipped.png");
+  background-size: contain;
   padding-left: 10px;
   border-radius: 0;
+  height: 10%;
 }
 
 .navbar-brand {
@@ -38,11 +37,20 @@ header .navbar {
   float: left;
 }
 
+.navbar-btn {
+  width: 15%;
+  height: 15%;
+}
+
+header nav button {
+  width: 16vw;
+}
 
 /* ---------------- INDEX MAIN ---------------- */
 
 main {
   padding: 10px 0;
+  margin: 20% 0;
 }
 
 .author-img {
@@ -60,6 +68,7 @@ main {
 .papers {
   position: relative;
 }
+
 
 /* ---------------- papers box-shadow tested on cssmatic.com ---------------- */
 .page {
@@ -104,6 +113,39 @@ main {
 .middle-page .author-img{
   visibility: hidden;
 }
+
+/* ---------------- SOCIAL LINKS ---------------- */
+/* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
+
+
+ul.list-inline.social-links {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links li a i {
+  width: 40px;
+  height: 40px;
+  padding: 16px 0;
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 7px;
+  text-align: center;
+  color: #fffdf5;
+  background: #151414;
+}
+
+.social-links li a i:hover{
+  /* overlay here */
+}
+
+
+main .social-links img {
+  width: 12vw;
+}
+
+
 
 /* ---------------- STUDY PAGE ---------------- */
 .panel-heading {
@@ -156,32 +198,88 @@ div.panel.panel-default div.panel-heading {
   padding: 0.5em;
 }
 
-/* ---------------- SOCIAL LINKS ---------------- */
+
+
+/* ---------------- SKILLS ---------------- */
+
+.languages-img {
+  background-image: url("../images/skills-languages-sm.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 35vh;
+  margin-bottom: 5vh;
+}
+
+.platforms-img {
+  background-image: url("../images/skills-platforms.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 35vh;
+}
+
+
+/* ------------- INDUSTRY SECTORS ------------- */
+
+
+
+
+
+/* ------------- TIMELINE ------------- */
 /* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
 
-
-ul.list-inline.social-links {
-  text-align: center;
+.history-heading {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
-.social-links li a i {
-  width: 40px;
-  height: 40px;
-  padding: 16px 0;
-  border-radius: 50%;
-  font-size: 17px;
-  line-height: 7px;
-  text-align: center;
-  color: #fffdf5;
-  background: #151414;
+.timeline-item {
+  padding: 4em 2em 0em 2em;
+  position: relative;
+  color: #fafafa;
+  border-left: 1px solid;
 }
 
-.social-links li a i:hover{
-  background: #a7bf4d;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
+.timeline-item p {
+  padding: 0;
+  margin: 0; 
+}
+
+.timeline-item::before {
+  content: attr(dates);
+  position: absolute;
+  left: 2.5em;
+  top: 3em;
+  display: block;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: .8em;
+  letter-spacing: 0.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item::after {
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 2.4em;
+  left: -6px;
+  border-radius:12px;
+  content: '';
+  background: #fafafa; 
+}
+
+.history-heading {
+  color: #fafafa;
+}
+
+.history-items {
+  margin-bottom: 30px;
 }
 
 
@@ -191,6 +289,8 @@ footer .navbar {
   border-radius: 0;
   background-color: #151414;
   background-image: url("../images/dark_wood_@2X-flipped.png");
+  background-size: contain;
+  height: 10%;
 }
 
 footer {
@@ -207,10 +307,14 @@ footer {
   padding: 0;
 }
 
+footer nav button {
+  width: 16vw;
+  }
+
 
 /* ---------------- MEDIA QUIERIES ---------------- */
 
-@media(min-width: 992px) {
+@media (min-width: @screen-lg-min) {
 
 .social-links li a i {
   width: 40px;
@@ -225,12 +329,24 @@ footer {
 }
 
 .social-links li a i:hover{
-  background: #a7bf4d;
-  transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
+  /* overlay here */
 }
+
+.languages-img {
+  background-image: url("../images/skills-languages-lg.svg");
+  }
+
+  header nav button {
+  width: 100px;
+  }
+
+  main .social-links img {
+  width: 100px;
+  }
+
+  footer nav button {
+  width: 100px;
+  }
 
 }
 

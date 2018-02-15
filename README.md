@@ -1,3 +1,2 @@
 # cv-website
-First from-scratch website &amp; it will be my resume
-At this point only good to view on phone screens in portrait
+Write a README.md file for your project that explains what the project does and the need that it fulfills. It should also describe the functionality of the project, as well as the technologies used. Detail how the project was deployed and tested and if some of the work was based on other code, explain what was kept and how it was changed to fit your need. A project submitted without a README.md file will FAIL.

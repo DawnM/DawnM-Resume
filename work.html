@@ -22,15 +22,15 @@
 
 <body>
   <!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
-  <header>
-    <nav class="navbar navbar-default">
+  <header>  
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="Brand: DawnM - Developer and Designer" src="images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="images/dawnm-brand.svg">
           </a>
+          <button type="button" class="btn btn-default navbar-btn hidden-lg"><a href="mailto: info@dawnm.uk"><img src="images/navicon-emailme.svg" alt="Email me button"></a></button>
         </div>
-        <button type="button" class="btn btn-default navbar-btn navbar-right"><a href="mailto: info@dawnm.uk"><img src="images/navicon-emailme.svg" alt="Email me button"></a></button>
       </div>
     </nav>
   </header>
@@ -38,29 +38,68 @@
 
 <!-- Main is a stack of pages with content on - essentially it's only this content that changes for each web page -->
   <main class="container-fluid"> 
+    <div class="row table-row">
+      
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="panel panel-default studies-general">
+        <!-- Default panel contents -->
+          <div class="panel-heading">Industry Sector Experience</div>
+          <div class="panel-body">
+            <img src="images/pie-work.svg" class="img-responsive center-block pie">
+          </div>
 
-    <div class="panel panel-default studies-general">
-      <!-- Default panel contents -->
-      <div class="panel-heading">Industry Sector Experience</div>
-      <div class="panel-body">
-        <img src="images/pie-work.svg" class="img-responsive center-block pie">
+        <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-studies.svg" alt="bullet">Studying - 10%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-design.svg" alt="bullet">Design - 11%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-software.svg" alt="bullet">Software Development 12%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-tourism.svg" alt="bullet">Tourism - 16%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-beauty.svg" alt="bullet">Beauty - 8%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-insurance.svg" alt="bullet">Insurance - 23%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-retail.svg" alt="bullet">Retail - 3%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-recruitment.svg" alt="bullet">Recruitment - 3%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-logistics.svg" alt="bullet">Logistics / Transport - 7%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-care.svg" alt="bullet">Social Care - 7%</li>
+          </ul>
+        </div>
       </div>
 
-      <!-- List group -->
-      <ul class="list-group">
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-studies.svg" alt="bullet">Studying - 10%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-design.svg" alt="bullet">Design - 11%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-software.svg" alt="bullet">Software Development 12%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-tourism.svg" alt="bullet">Tourism - 16%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-beauty.svg" alt="bullet">Beauty - 8%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-insurance.svg" alt="bullet">Insurance - 23%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-retail.svg" alt="bullet">Retail - 3%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-recruitment.svg" alt="bullet">Recruitment - 3%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-logistics.svg" alt="bullet">Logistics / Transport - 7%</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-work-care.svg" alt="bullet">Social Care - 7%</li>
-      </ul>
-    </div>
-      
+      <!-- Work History Timeline -->  
+      <div class="hidden-xs hidden-sm hidden-md col-lg-10">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="history-heading uppercase">Work History</h3>
+          </div>
+        </div>
+        <div class="history-items">
+          <div class="timeline-item" dates="03/2017 &mdash; 08/2017">
+            <h4>Allegis Group UK</h4>
+            <p>Administrative Assistant</p>
+          </div>
+          <div class="timeline-item" dates="01/2014 &mdash; 12/2015">
+            <h4>Dave Pohl &amp; Associates, SA</h4>
+            <p>Office Administrator</p>
+          </div>
+          <div class="timeline-item" dates="07/2013 &mdash; 12/2013">
+            <h4>Bargain Books, SA</h4>
+            <p>Assistant Book Seller (temp)</p>
+          </div>
+          <div class="timeline-item" dates="03/2012 &mdash; 12/2016">
+            <h4>Colours! (self-employed), SA</h4>
+            <p>BioSculpture Nail Technician</p>
+          </div>
+          <div class="timeline-item" dates="01/2011 &mdash; 04/2011">
+            <h4>Quality Reliable Care, UK</h4>
+            <p>Bank Support Worker</p>
+          </div>
+          <div class="timeline-item" dates="05/2010 &mdash; 04/2011">
+            <h4>Sussex Partnership NHS Foundation Trust, UK</h4>
+            <p>Bank Support Worker</p>
+          </div>
+        </div>
+      </div>
+
+    </div>  
   </main>
 
 

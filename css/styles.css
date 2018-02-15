@@ -1,47 +1,42 @@
 body {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #262525;
+  background-color: #151414;
   background-image: url("../images/dark_wood_@2X.png");
+  background-size: contain;
   background-repeat: repeat;
   color: #1b1b1b;
   font-size: 1.2em;
 }
 
-.navbar-btn {
-  width: 15%;
-  height: 15%;
-}
 
 /* ---------------- styles for header  ---------------- */
 
 header .navbar {
-  background-color: transparent;
-  padding-left: 10px;
+  background-color: #151414;
+  background-image: url("../images/dark_wood_@2X-flipped.png");
+  background-size: contain;
   border-radius: 0;
 }
 
 .navbar-brand {
-  min-height: 100%;
   width: 80%;
-  padding: 10px;
-}
-
-.top-nav {
-  display: flex;
-  max-height: 100px;
-}
-
-.navbar-header {
-  min-width: 90%;
-  position: static;
   float: left;
 }
 
+.navbar-header {
+  min-width: 100%;
 
-/* ---------------- styles for main content ---------------- */
+}
+
+.navbar-btn {
+  width: 15%;
+}
+
+/* ---------------- INDEX MAIN ---------------- */
 
 main {
   padding: 10px 0;
+  margin: 22% 0;
 }
 
 .author-img {
@@ -50,19 +45,15 @@ main {
   margin: 0 10px 5px 0;
 }
 
-.page-img {
-  width: 80%;
-  text-align: center;
-  margin: 10px;
-}
-
-.papers {
+.paper-stack {
   position: relative;
 }
 
-/* ---------------- box-shadow tested on cssmatic.com ---------------- */
+
+/* ---------------- papers box-shadow tested on cssmatic.com ---------------- */
 .page {
   position: absolute; 
+  left: 0;
   background-color: #fffdf5;
   padding: 5px;
   border: 1px solid rgba(217,215,208,0.5);
@@ -73,24 +64,17 @@ main {
   z-index: auto;
 }
 
-.pie {
-  max-width: 80%;
-  padding: 4px 0;
-  text-align: center;
-}
-
-.pie-bullet {
-  height: 1em;
-  margin-right: 1em;
-}
-
 .bottom-page {
   color: transparent;
   z-index: -2;
   transform: rotate(1.5deg);
 }
 
-.bottom-page .author-img {
+.bottom-page .author-img{
+  visibility: hidden;
+}
+
+.bottom-page .social-links {
   visibility: hidden;
 }
 
@@ -100,11 +84,53 @@ main {
   transform: rotate(-2deg);
 }
 
-.middle-page .author-img {
+.middle-page .author-img{
   visibility: hidden;
 }
 
-/* ---------------- study page styles ---------------- */
+.middle-page .social-links {
+  visibility: hidden;
+}
+
+
+
+/* ---------------- SOCIAL LINKS ---------------- */
+/* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
+
+
+ul.list-inline.social-links {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-links li a img:hover{
+  /* overlay here */
+}
+
+
+main .social-links img {
+  width: 50px;
+  padding-top: 5px;
+}
+
+
+
+/* ---------------- STUDY PAGE ---------------- */
+.study-panels {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.panel {
+  flex-grow: 1;
+  margin: 0 30px 30px 30px;
+  flex-basis: 310px;
+
+}
+
 .panel-heading {
   font-size: 1.5em;
   font-family: 'Volkhov', serif;
@@ -156,11 +182,109 @@ div.panel.panel-default div.panel-heading {
 }
 
 
-/* ---------------- styles for footer ---------------- */
+
+/* ---------------- SKILLS ---------------- */
+
+.languages-img {
+  background-image: url("../images/skills-languages-sm.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 35vh;
+  margin-bottom: 5vh;
+}
+
+.platforms-img {
+  background-image: url("../images/skills-platforms.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 35vh;
+}
+
+.pie {
+  max-width: 80%;
+  padding: 4px 0;
+  text-align: center;
+}
+
+.pie-bullet {
+  height: 1em;
+  margin-right: 1em;
+}
+
+
+/* ------------- INDUSTRY SECTORS ------------- */
+
+
+
+
+
+/* ------------- TIMELINE ------------- */
+/* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
+
+.history-heading {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.timeline-item {
+  padding: 4em 2em 0em 2em;
+  position: relative;
+  color: #fafafa;
+  border-left: 1px solid;
+}
+
+.timeline-item p {
+  padding: 0;
+  margin: 0; 
+}
+
+.timeline-item::before {
+  content: attr(dates);
+  position: absolute;
+  left: 2.5em;
+  top: 3em;
+  display: block;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+  font-size: .8em;
+  letter-spacing: 0.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item::after {
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 2.4em;
+  left: -6px;
+  border-radius:12px;
+  content: '';
+  background: #fafafa; 
+}
+
+.history-heading {
+  color: #fafafa;
+}
+
+.history-items {
+  margin-bottom: 30px;
+}
+
+
+/* ---------------- FOOTER ---------------- */
 
 footer .navbar {
   border-radius: 0;
-  background-color: transparent;
+  background-color: #151414;
+  background-image: url("../images/dark_wood_@2X-flipped.png");
+  background-size: contain;
+  height: 10%;
 }
 
 footer {
@@ -171,9 +295,82 @@ footer {
 .bottom-nav {
   display: flex;
   justify-content: space-around;
-  max-height: 100px;
 }
 
 .navbar-btn {
   padding: 0;
 }
+
+footer nav button {
+  width: 16vw;
+  }
+
+
+/* ---------------- MEDIA QUIERIES ---------------- */
+
+@media screen and (min-width: 992px) {
+
+.social-links li a i {
+  width: 40px;
+  height: 40px;
+  padding: 16px 0;
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 7px;
+  text-align: center;
+  color: #151414;
+  background: #fffdf5;
+}
+
+.social-links li a i:hover{
+  /* overlay here */
+}
+
+.languages-img {
+  background-image: url("../images/skills-languages-lg.svg");
+  }
+
+  header nav button {
+  width: 100px;
+  }
+
+  main .social-links img {
+  width: 100px;
+  }
+
+  footer nav button {
+  width: 100px;
+  }
+
+}
+
+@media screen and (min-width: 656px) {
+  html {
+    font-size: 16px;
+  }
+
+  .panel {
+    max-width: 500px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+

@@ -21,33 +21,30 @@
 </head>
 
 <body>
-  <!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
-  <header>
-    <nav class="navbar navbar-default">
+<!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
+  <header>  
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="Brand: DawnM - Developer and Designer" src="images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="images/dawnm-brand.svg">
           </a>
+          <button type="button" class="btn btn-default navbar-btn hidden-lg"><a href="mailto: info@dawnm.uk"><img src="images/navicon-emailme.svg" alt="Email me button"></a></button>
         </div>
-        <button type="button" class="btn btn-default navbar-btn navbar-right"><a href="mailto: info@dawnm.uk"><img src="images/navicon-emailme.svg" alt="Email me button"></a></button>
       </div>
     </nav>
   </header>
 
-
-<!-- Main is a stack of pages with content on - essentially it's only this content that changes for each web page -->
-  <main class="container-fluid">
-    
-    <!-- WEB DEV STUDY STACK -->
+  <main class="study-panels">
+  <!-- WEB DEV STUDY STACK -->
     <div class="panel panel-default studies-web">
       <!-- Default panel contents -->
-      <div class="panel-heading">Web Development Studies</div>
+      <div class="panel-heading">Developer Studies</div>
       <div class="panel-body">
-        <img src="images/pie-studies-web.svg" class="img-responsive center-block pie">
+        <img src="images/pie-studies-developer.svg" class="img-responsive center-block pie">
       </div>
 
-      <!-- List group -->
+    <!-- List group -->
       <ul class="list-group">
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-greenm.svg" alt="???">Full Stack</li>
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-greenl.svg" alt="???">Front End Foundations</li>
@@ -58,7 +55,7 @@
       </ul>
     </div>
 
-    <!-- DESIGN STUDY STACK -->
+  <!-- DESIGN STUDYIES -->
     <div class="panel panel-default studies-design">
       <!-- Default panel contents -->
       <div class="panel-heading">Design Studies</div>
@@ -77,7 +74,7 @@
       </ul>
     </div>
 
-    <!-- GENERAL STUDY STACK -->
+  <!-- GENERAL STUDIES -->
     <div class="panel panel-default studies-general">
       <!-- Default panel contents -->
       <div class="panel-heading">General Studies</div>
@@ -89,7 +86,7 @@
       <ul class="list-group">
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-bluem.svg" alt="???">Trello</li>
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-bluem.svg" alt="???">Project Management Basics</li>
-        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-bluem.svg" alt="???">Writing Effective Business Communications</li>
+        <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-bluem.svg" alt="???">Writing Effective Business Comms</li>
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-bluem.svg" alt="???">MS Word - Basic + Advanced</li>
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-bluem.svg" alt="???">MS Excel - Basic + Advanced</li>
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-bluem.svg" alt="???">MS Outlook</li>
@@ -98,11 +95,10 @@
         <li class="list-group-item"><img class="pie-bullet" src="images/pie-bullet-blued.svg" alt="???">Dutch (ongoing)</li>
       </ul>
     </div>
-
   </main>
 
 
-  <!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
+<!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
   <footer>
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid bottom-nav">

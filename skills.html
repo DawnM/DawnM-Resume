@@ -23,11 +23,11 @@
 <body>
   <!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
   <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="Brand: DawnM - Developer and Designer" src="images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="images/dawnm-brand.svg">
           </a>
         </div>
         <button type="button" class="btn btn-default navbar-btn navbar-right"><a href="mailto: info@dawnm.uk"><img src="images/navicon-emailme.svg" alt="Email me button"></a></button>
@@ -38,14 +38,15 @@
 
 <!-- Main is a stack of pages with content on - essentially it's only this content that changes for each web page -->
   <main class="container-fluid"> 
+    <div class="row table-row">
+      <div class="languages-img col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-6">
+        <p class="sr-only">Speech bubble containing the languages HTML5, CSS3, JavaScript, Bootstrap, Python, jQuery, and AngularJS</p>
+      </div>
 
-    <div class="row col-sm-12 col-lg-6">
-      <img src="images/skills-languages-portrait.svg" alt="speech bubble containing the languages HTML5, CSS3, JavaScript, Bootstrap, Python, jQuery, and AngularJS">
+      <div class="platforms-img col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-6">
+        <p class="sr-only">Computer screen showing the programs and platforms Adobe Illustrator, Adobe Xd, Adobe Photoshop, Github, Wordpress, Slack, Terminal, Sublime, repl.it, and Codepen</p>
+      </div>
     </div>
-    <div class="row col-sm-12 col-lg-6">
-      <img src="images/skills-platforms.svg" alt="computer screen showing the programs and platforms Adobe Illustrator, Adobe Xd, Adobe Photoshop, Github, Wordpress, Slack, Terminal, Sublime, repl.it, and Codepen">
-    </div>
-      
   </main>
   
 
@@ -56,7 +57,7 @@
         <button type="button" class="btn btn-default navbar-btn"><a href="index.html"><img src="images/navicon-author.svg" alt="Home button"></a></button>
         <button type="button" class="btn btn-default navbar-btn"><a href="studies.html"><img src="images/navicon-study.svg" alt="Studies button"></a></button>
         <button type="button" class="btn btn-default navbar-btn"><a href="skills.html"><img src="images/navicon-skills.svg" alt="Skills button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-md"><a href="portfolio.html"><img src="images/navicon-portfolio.svg" alt="Portfolio button"></a></button>
+        <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm hidden-md"><a href="portfolio.html"><img src="images/navicon-portfolio.svg" alt="Portfolio button"></a></button>
         <button type="button" class="btn btn-default navbar-btn"><a href="work.html"><img src="images/navicon-work.svg" alt="Work button"></a></button>
       </div>
   </nav>

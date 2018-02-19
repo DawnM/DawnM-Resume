@@ -13,11 +13,10 @@
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Volkhov:700i" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
-  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="assets/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicomatic/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
@@ -27,99 +26,94 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="DawnM - Developer and Designer" src="images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="assets/images/dawnm-brand.svg">
           </a>
-          <button type="button" class="btn btn-default navbar-btn hidden-lg"><a href="mailto: info@dawnm.uk"><img src="images/navicon-emailme.svg" alt="Email me button"></a></button>
+          <button type="button" class="btn btn-default navbar-btn"><a href="mailto:info@dawnm.uk"><img src="assets/images/navicon-emailme.svg" alt="Email me button"></a></button>
+          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
+          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
+          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
+          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
         </div>
       </div>
     </nav>
   </header>
 
-<!--  these are only for large screens - DONT fuck with them for now!
-
-            <button type="button" class="btn btn-default navbar-btn navbar-right hidden-xs hidden-sm hidden-md"><a href="index.html"><img src="images/navicon-author.svg" alt="Home button"></a></button>
-            <button type="button" class="btn btn-default navbar-btn navbar-right hidden-xs hidden-sm hidden-md"><a href="studies.html"><img src="images/navicon-study.svg" alt="Studies button"></a></button>
-            <button type="button" class="btn btn-default navbar-btn navbar-right hidden-xs hidden-sm hidden-md"><a href="skills.html"><img src="images/navicon-skills.svg" alt="Skills button"></a></button>
-            <button type="button" class="btn btn-default navbar-btn navbar-right hidden-xs hidden-sm hidden-md"><a href="work.html"><img src="images/navicon-work.svg" alt="Work button"></a></button>
-            <button type="button" class="btn btn-default navbar-btn navbar-right hidden-lg"><a href="mailto: info@dawnm.uk"><img src="images/navicon-emailme.svg" alt="Email me button"></a></button>
-
-  -->
-
-
   <!-- Main is a stack of pages with content on - essentially it's only this content that changes for each web page -->
   <main class="container-fluid"> 
     <div class="row row-table">
-      <div class="social-links hidden-xs hidden-sm hidden-md col-lg-5"">
-        <ul>
-            <li><a target="_blank" href="mailto: info@dawnm.uk"><img src="images/socicon-emailme.svg" alt="email icon">Get in touch!</a></li>
-            <li><a target="_blank" href="https://github.com/DawnM"><img src="images/socicon-github.svg" alt="github icon">My Github Repos</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/dawn-caldermurphy/"><img src="images/socicon-linkedin.svg" alt="linkedin icon">View my LinkedIn</a></li>
-            <li><a target="_blank" href="https://twitter.com/DawnM_Created"><img src="images/socicon-twitter.svg">Check out my tweets</a></li>
-            <li><a target="_blank" href="#"><img src="images/socicon-pdf.svg" alt="PDF icon">Download my CV</a></li>
-          </ul>
-      </div>
 
-      <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-7 paper-stack">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1 paper-stack">
         <div class="page bottom-page"> <!-- make all content invisible - needed for page size matching only -->
-          <img src="images/author-img-grey.svg" alt="Author icon" class="author-img"> 
-          <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p>
-          <p class="hidden-xs">My favourite aspects of previous roles were always on the creative side, whether improving existing forms and documentation for ease of use, or working on branding projects. My new skills will allow me to make these preferences the focus of my career.</p>
+          <img src="assets/images/author-img-grey.svg" alt="Author icon" class="author-img"> 
+          <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p><br>
+          <img src="assets/images/cmlove-tree.svg" alt="tree of life" class="tree hidden-xs hidden-sm">
+          <p class="hidden-xs">My favourite aspects of previous roles were always on the creative side, whether improving existing forms and documentation for ease of use, or working on branding projects. My new skills will allow me to make these preferences the focus of my career.</p><br>
           <p>The combination of my 18 years varied industry experience, along with my continual focus on education enables me to more easily relate to clients processes and needs, thereby bringing about more efficient solutions.</p>
-          <div class="">
-            <ul class="list-inline hidden-lg social-links">
-              <li><img src="images/socicon-github.svg"></li>
-              <li><img src="images/socicon-linkedin.svg"></li>
-              <li><img src="images/socicon-twitter.svg"></li>
-              <li><img src="images/socicon-pdf.svg"></li>
+          <div class="hidden-md hidden-lg">
+            <ul class="list-inline social-links">
+              <li><a target="_blank" href="https://github.com/DawnM"><img src="assets/images/socicon-github-mark-dark.svg" alt="My Github Repos"></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/dawn-caldermurphy/"><img src="assets/images/socicon-linkedin.svg" alt="View my LinkedIn"></a></li>
+              <li><a target="_blank" href="https://twitter.com/DawnM_Created"><img src="assets/images/socicon-twitter.svg" alt="Check out my tweets"></a></li>
+              <li><a target="_blank" href="#"><img src="assets/images/socicon-pdf.svg" alt="Download my CV"></a></li>
             </ul>
           </div>
         </div>
 
         <div class="page middle-page"> <!-- make all content invisible - needed for page size matching only -->
-          <img src="images/author-img-grey.svg" alt="Author icon" class="author-img"> 
-          <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p>
-          <p class="hidden-xs">My favourite aspects of previous roles were always on the creative side, whether improving existing forms and documentation for ease of use, or working on branding projects. My new skills will allow me to make these preferences the focus of my career.</p>
+          <img src="assets/images/author-img-grey.svg" alt="Author icon" class="author-img"> 
+          <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p><br>
+          <img src="assets/images/cmlove-tree.svg" alt="tree of life" class="tree hidden-xs hidden-sm">
+          <p class="hidden-xs">My favourite aspects of previous roles were always on the creative side, whether improving existing forms and documentation for ease of use, or working on branding projects. My new skills will allow me to make these preferences the focus of my career.</p><br>
           <p>The combination of my 18 years varied industry experience, along with my continual focus on education enables me to more easily relate to clients processes and needs, thereby bringing about more efficient solutions.</p>
-          <div class="">
-            <ul class="list-inline hidden-lg social-links">
-              <li><img src="images/socicon-github.svg"></li>
-              <li><img src="images/socicon-linkedin.svg"></li>
-              <li><img src="images/socicon-twitter.svg"></li>
-              <li><img src="images/socicon-pdf.svg"></li>
+          <div class="hidden-md hidden-lg">
+            <ul class="list-inline social-links">
+              <li><a target="_blank" href="https://github.com/DawnM"><img src="assets/images/socicon-github-mark-dark.svg" alt="My Github Repos"></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/dawn-caldermurphy/"><img src="assets/images/socicon-linkedin.svg" alt="View my LinkedIn"></a></li>
+              <li><a target="_blank" href="https://twitter.com/DawnM_Created"><img src="assets/images/socicon-twitter.svg" alt="Check out my tweets"></a></li>
+              <li><a target="_blank" href="#"><img src="assets/images/socicon-pdf.svg" alt="Download my CV"></a></li>
             </ul>
           </div>
         </div>
 
         <div class="page top-page"> <!-- this is the page of content that will be shown -->
-          <img src="images/author-img-grey.svg" alt="Author icon" class="author-img"> 
-          <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p>
-          <p class="hidden-xs">My favourite aspects of previous roles were always on the creative side, whether improving existing forms and documentation for ease of use, or working on branding projects. My new skills will allow me to make these preferences the focus of my career.</p>
+          <img src="assets/images/author-img-grey.svg" alt="Author icon" class="author-img"> 
+          <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p><br>
+          <img src="assets/images/cmlove-tree.svg" alt="tree of life" class="tree hidden-xs hidden-sm">
+          <p class="hidden-xs">My favourite aspects of previous roles were always on the creative side, whether improving existing forms and documentation for ease of use, or working on branding projects. My new skills will allow me to make these preferences the focus of my career.</p><br>
           <p>The combination of my 18 years varied industry experience, along with my continual focus on education enables me to more easily relate to clients processes and needs, thereby bringing about more efficient solutions.</p>
-          <div class="">
-            <ul class="list-inline hidden-lg social-links">
-              <li><a target="_blank" href="https://github.com/DawnM"><img src="images/socicon-github.svg" alt="My Github Repos"></a></li>
-              <li><a target="_blank" href="https://www.linkedin.com/in/dawn-caldermurphy/"><img src="images/socicon-linkedin.svg" alt="View my LinkedIn"></a></li>
-              <li><a target="_blank" href="https://twitter.com/DawnM_Created"><img src="images/socicon-twitter.svg" alt="Check out my tweets"></a></li>
-              <li><a target="_blank" href="#"><img src="images/socicon-pdf.svg" alt="Download my CV"></a></li>
+          <div class="hidden-md hidden-lg">
+            <ul class="list-inline social-links">
+              <li><a target="_blank" href="https://github.com/DawnM"><img src="assets/images/socicon-github-mark-dark.svg" alt="My Github Repos"></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/dawn-caldermurphy/"><img src="assets/images/socicon-linkedin.svg" alt="View my LinkedIn"></a></li>
+              <li><a target="_blank" href="https://twitter.com/DawnM_Created"><img src="assets/images/socicon-twitter.svg" alt="Check out my tweets"></a></li>
+              <li><a target="_blank" href="#"><img src="assets/images/socicon-pdf.svg" alt="Download my CV"></a></li>
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="social-links hidden-xs hidden-sm col-md-4 col-md-offset-0">
+        <ul>
+          <li><a target="_blank" href="https://github.com/DawnM">Github Repos<img class="social-icon" src="assets/images/socicon-github-mark-light.svg" alt="github icon"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/dawn-caldermurphy/">LinkedIn Profile<img class="social-icon" src="assets/images/socicon-linkedin.svg" alt="linkedin icon"></a></li>
+          <li><a target="_blank" href="https://twitter.com/DawnM_Created">@DawnM_Created<img class="social-icon" src="assets/images/socicon-twitter.svg"></a></li>
+          <li><a target="_blank" href="assets/Dawn-CM_CV-2018.pdf">Download my CV<img class="social-icon" src="assets/images/socicon-pdf.svg" alt="PDF icon"></a></li>
+        </ul>
       </div>
       
     </div>
   </main>
 
   <!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
-  <footer class="hidden-lg">
+  <footer class="hidden-md hidden-lg">
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid bottom-nav">
-        <button type="button" class="btn btn-default navbar-btn"><a href="index.html"><img src="images/navicon-author.svg" alt="Home button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="studies.html"><img src="images/navicon-study.svg" alt="Studies button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="skills.html"><img src="images/navicon-skills.svg" alt="Skills button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="work.html"><img src="images/navicon-work.svg" alt="Work button"></a></button>
+        <button type="button" class="btn btn-default navbar-btn"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
+        <button type="button" class="btn btn-default navbar-btn"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
+        <button type="button" class="btn btn-default navbar-btn"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
+        <button type="button" class="btn btn-default navbar-btn"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
       </div>
     </nav>
-  
   </footer>
   
 </body>

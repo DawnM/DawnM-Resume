@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Volkhov:700i');
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #151414;
@@ -74,7 +76,11 @@ main {
   transform: rotate(1.5deg);
 }
 
-.bottom-page .author-img{
+.bottom-page .author-img {
+  visibility: hidden;
+}
+
+.bottom-page .tree {
   visibility: hidden;
 }
 
@@ -89,6 +95,10 @@ main {
 }
 
 .middle-page .author-img{
+  visibility: hidden;
+}
+
+.middle-page .tree{
   visibility: hidden;
 }
 
@@ -112,10 +122,13 @@ ul.list-inline.social-links {
   /* overlay here */
 }
 
+main .social-links {
+  padding-top: 5px;  
+}
+
 
 main .social-links img {
   width: 50px;
-  padding-top: 5px;
 }
 
 
@@ -146,6 +159,10 @@ main .social-links img {
 
 .studies-web {
   color: #3c3f2d;
+}
+
+.pie-bullet {
+  margin-bottom: 0.2em;
 }
 
  div.panel.panel-default.studies-web div.panel-heading {
@@ -230,17 +247,21 @@ div.panel.panel-default div.panel-heading {
 /* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
 
 .history-heading {
-  font-family: "Exo", sans-serif;
-  font-weight: 300;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  font-size: 1.5em;
+  font-family: 'Volkhov', serif;
+  text-align: center;
 }
+
 
 .timeline-item {
   padding: 4em 2em 0em 2em;
   position: relative;
-  color: #fafafa;
+  color: #fffdf5;
   border-left: 1px solid;
+}
+
+main div:nth-child(6) {
+  padding-bottom: 2.1em;
 }
 
 .timeline-item p {
@@ -254,9 +275,8 @@ div.panel.panel-default div.panel-heading {
   left: 2.5em;
   top: 3em;
   display: block;
-  font-family: "Exo", sans-serif;
-  font-weight: 500;
-  font-size: .8em;
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 0.8em;
   letter-spacing: 0.2em;
   padding: 0;
   margin: 0;
@@ -268,18 +288,25 @@ div.panel.panel-default div.panel-heading {
   display: block;
   position: absolute;
   top: 2.4em;
-  left: -6px;
+  left: -6.5px;
   border-radius:12px;
   content: '';
-  background: #fafafa; 
+  background: #fffdf5; 
 }
 
 .history-heading {
-  color: #fafafa;
+  color: #fffdf5;
+  letter-spacing: 0.05em;
 }
 
-.history-items {
-  margin-bottom: 30px;
+.employer {
+  letter-spacing: 0.1em;
+}
+
+.job-title {
+  font-size: 0.9em;
+  font-style: italic;
+  letter-spacing: 0.1em;
 }
 
 
@@ -314,7 +341,7 @@ footer {
   /* ask Yoni why this isn't working on testing */
 }
 
-@media screen and (min-width: 488px) {
+@media screen and (min-width: 488px) and (max-width: 656px) {
 
   html {
     font-size: 13px;
@@ -333,7 +360,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 656px) {
+@media screen and (min-width: 656px) and (max-width: 824px) {
 
   html {
     font-size: 16px;
@@ -370,7 +397,7 @@ footer {
 
 }
 
-@media screen and (min-width: 824px) {
+@media screen and (min-width: 824px) and (max-width: 992px) {
 
   html {
     font-size: 17px;
@@ -392,64 +419,101 @@ footer {
 @media screen and (min-width: 992px) {
 
   html {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .navbar-brand {
-    width: 38%;
+    width: 37%;
+    padding-left: 40px;
   }
 
   .navbar-btn {
     width: 6.5%;
+    margin-right: 30px;
   }
 
   main {
-    margin: 13% 0;
+    margin: 10% 0;
+  }
+
+  .tree {
+     float: right;
+     max-width: 18%;
+     margin: -40px 10px 5px 5px; 
+  }
+
+  .social-links li {
+    text-align: right;
+    margin-right: 30px;
+    list-style: none;
+    padding-top: 40px;
+  }
+
+  .social-links li:first-child {
+   padding-top: 20px;
+  }
+
+  .social-links a {
+    color: #fffdf5;
+    letter-spacing: 0.05em;
+  }
+
+  main .social-links img {
+    width: 50px;
+  }
+
+  .social-icon {
+    margin-left: 30px;
+  }
+
+  .skills {
+    margin-top: 15%;
   }
 
   .page {
     padding: 20px;
   }
 
-  header nav button {
-    width: 100px;
-  }
 
-  main .social-links img {
-    width: 65px;
-    padding-top: 15px;
-  }
 
  .languages-img {
-    margin-bottom: 6vh;
+  background-image: url("../images/skills-languages-lg.svg");
+  min-height: 25vh;
+  margin-bottom: 6vh;
   }
 
-  footer nav button {
-    width: 100px;
+  .coming-soon {
+    color: #fffdf5;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 40px;
   }
+
+  .work .panel {
+    margin-left: 0;
+  }
+
 
 }
 
 @media screen and (min-width: 1096px) {
 
   .navbar-brand {
-    width: 35%;
+    max-width: 25%;
   }
 
   .navbar-btn {
-    width: 6%;
-  }  
-
-  html {
-    font-size: 20px;
+    max-width: 5%;
   }
 
-  .navbar-brand {
-    width: 25%;
+  .author-img {
+    max-width: 20%;
   }
 
-  .navbar-btn {
-    width: 5%;
+  .tree {
+    max-width: 15%;
+    margin-top: -20px;
   }
 }
 

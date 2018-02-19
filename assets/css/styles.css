@@ -42,7 +42,11 @@ header .navbar {
 
 main {
   padding: 10px 0;
-  margin: 22% 0;
+  margin: 23% 0;
+}
+
+main .page {
+  margin: 2% 0 27% 0;
 }
 
 .author-img {
@@ -145,6 +149,7 @@ main .social-links img {
   flex-grow: 1;
   margin: 0 30px 30px 30px;
   flex-basis: 310px;
+  max-height: 100%;
 }
 
 .study-panels .studies-general {
@@ -154,6 +159,8 @@ main .social-links img {
 .panel-heading {
   font-size: 1.5em;
   font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-style: italic;
   text-align: center;
 }
 
@@ -249,6 +256,8 @@ div.panel.panel-default div.panel-heading {
 .history-heading {
   font-size: 1.5em;
   font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-style: italic;
   text-align: center;
 }
 
@@ -485,7 +494,7 @@ footer {
   .coming-soon {
     color: #fffdf5;
     font-family: 'Ubuntu Mono', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: center;
     margin-top: 40px;
   }

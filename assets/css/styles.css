@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Volkhov:400,400i');
 @import url('https://fonts.googleapis.com/css?family=Volkhov:700i');
+
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -57,6 +59,27 @@ main .page {
 
 .paper-stack {
   position: relative;
+}
+
+.clearfix {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-size: 1em;
+  font-family: 'Volkhov', serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+blockquote img {
+  height: 1em;
+  margin-bottom: 1em;
+  opacity: 0.6;
+}
+
+blockquote p {
+  font-style: italic;
 }
 
 
@@ -328,7 +351,7 @@ footer .navbar {
   background-size: contain;
 }
 
-footer {
+body > footer {
   position: fixed;
   bottom: 0;
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
 @import url('https://fonts.googleapis.com/css?family=Volkhov:400,400i');
 @import url('https://fonts.googleapis.com/css?family=Volkhov:700i');
 
@@ -13,7 +14,7 @@ body {
 }
 
 
-/* ---------------- styles for header  ---------------- */
+/* ---------------- HEADER - all pages ---------------- */
 
 header .navbar {
   background-color: #151414;
@@ -40,7 +41,7 @@ header .navbar {
 }
 
 
-/* ---------------- INDEX MAIN ---------------- */
+/* ---------------- INDEX - main ---------------- */
 
 main {
   padding: 10px 0;
@@ -83,7 +84,7 @@ blockquote p {
 }
 
 
-/* ---------------- papers box-shadow tested on cssmatic.com ---------------- */
+/* ---------------- INDEX - paper stack ---------------- */
 .page {
   position: absolute; 
   left: 0;
@@ -135,8 +136,7 @@ blockquote p {
 
 
 
-/* ---------------- SOCIAL LINKS ---------------- */
-/* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
+/* ---------------- INDEX - social links ---------------- */
 
 
 ul.list-inline.social-links {
@@ -145,8 +145,8 @@ ul.list-inline.social-links {
   justify-content: space-around;
 }
 
-.social-links li a img:hover{
-  /* overlay here */
+.social-links li:hover{
+  text-decoration: underline;
 }
 
 main .social-links {
@@ -160,18 +160,9 @@ main .social-links img {
 
 
 
-/* ---------------- STUDY PAGE ---------------- */
-/* .study-panels {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-} */
+/* ---------------- STUDIES / WORK - panels ---------------- */
 
-.study-panels .panel {
-/*  flex-grow: 1;
-  margin: 0 30px 30px 30px;
-  flex-basis: 310px; */
+.panels .panel {
   max-height: 100%;
 }
 
@@ -187,7 +178,8 @@ main .social-links img {
   text-align: center;
 }
 
-.studies-web {
+.studies-web,
+.studies-web a {
   color: #3c3f2d;
 }
 
@@ -199,7 +191,8 @@ main .social-links img {
   color: #3c3f2d;
  }
 
-.studies-design {
+.studies-design,
+.studies-design a {
   color: #720321;
  }
 
@@ -207,7 +200,8 @@ div.panel.panel-default.studies-design div.panel-heading {
   color: #720321;
  }
 
-.studies-general {
+.studies-general,
+.studies-general a {
   color: #404b59;
  }
 
@@ -237,30 +231,17 @@ div.panel.panel-default div.panel-heading {
   text-decoration: none;
 }
 
-.list-group-item:hover {
-  color: #3c3f2d;
-}
 
-
-
-
-/* ---------------- SKILLS ---------------- */
+/* ---------------- SKILLS - images ---------------- */
 
 .languages-img {
-  /*background-image: url("../images/skills-languages-sm.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;*/
   min-height: 35vh;
-  margin-bottom: 5vh;
+  margin: 5vh;
 }
 
 .platforms-img {
-  background-image: url("../images/skills-platforms.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   min-height: 35vh;
+  margin: 5vh;
 }
 
 .pie {
@@ -274,14 +255,26 @@ div.panel.panel-default div.panel-heading {
   margin-right: 1em;
 }
 
+.skills-languages,
+.skills-languages a,
+.skills-platforms,
+.skills-platforms a {
+  color: #1b1b1b;
+  font-family: "Ubuntu Mono", "Ubuntu", sans-serif;
+}
 
-/* ------------- INDUSTRY SECTORS ------------- */
+.skills-image {
+  width: 80%;
+}
+
+
+/* ------------- WORK - industry sector panel------------- */
+  /* panels styles from STUDIES page needed no adaptation for this page */
 
 
 
-
-/* ------------- TIMELINE ------------- */
-/* ---------------- adapted from Code Institute : Resume tutorials ---------------- */
+/* ------------- WORK - timeline ------------- */
+  /*  adapted from Code Institute : Resume tutorials  */
 
 .history-heading {
   font-size: 1.5em;
@@ -349,7 +342,7 @@ main div:nth-child(6) {
 }
 
 
-/* ---------------- FOOTER ---------------- */
+/* ---------------- FOOTER - all pages ---------------- */
 
 footer .navbar {
   border-radius: 0;
@@ -373,12 +366,8 @@ body > footer {
 }
 
 
-/* ---------------- MEDIA QUIERIES ---------------- */
+/* ---------------- MEDIA QUERIES ---------------- */
 
-
-@media screen and (orientation: landscape) and (max-width: 320px) {
-  /* ask Yoni why this isn't working on testing */
-}
 
 @media screen and (min-width: 488px) and (max-width: 656px) {
 
@@ -433,7 +422,6 @@ body > footer {
   .languages-img {
     margin-bottom: 2vh;
   }
-
 }
 
 @media screen and (min-width: 824px) and (max-width: 992px) {
@@ -516,9 +504,9 @@ body > footer {
 
 
  .languages-img {
-  /*background-image: url("../images/skills-languages-lg.svg");
+  background-image: url("../images/skills-languages-lg.svg");
   min-height: 25vh;
-  margin-bottom: 6vh;*/
+  margin-bottom: 6vh;
   }
 
   .coming-soon {
@@ -532,8 +520,6 @@ body > footer {
   .work .panel {
     margin-left: 0;
   }
-
-
 }
 
 @media screen and (min-width: 1096px) {
@@ -555,11 +541,3 @@ body > footer {
     margin-top: -20px;
   }
 }
-
-
-
-
-
-
-
-

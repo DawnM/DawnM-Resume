@@ -43,10 +43,12 @@ As this is purely an HTML and CSS website, there was no automated testing.  The 
 * iPad Pro, running iOS 11.2.6
 * OnePlus One, running Android 7.1.2 (LineageOS)
 * Huawei P8 lite, running Android Marshmallow
+* Kindle Fire
 
 
 ### Bugs Found:
 * Initially the nav links were nested inside button tags and this caused a conflict in the desktop version of Firefox only.  The button tags were removed, and the conflict was resolved.
+* Initially used flexbox for sizing the three panels on the studies page, as bootstrap wasn't looking the way I wanted it to. However I did not like that the third panel would be a larger than the first two at resolutions where it fell to a second row. So the page was reconfigured back to bootstrap to ensure panel width uniformity.
 * on iPhone 5 / SE (4 inch screens) the main content on the index page falls below the bottom nav bar, and will not scroll up for viewing.  This cannot be replicated on any other device or desktop browser, and therefore no solution has been found at this time.  This bug will remain until further resources can be devoted to it, as the site's target audience will most likely be accessing it via desktop browsers, and thus will not encounter the bug.
 
 ## Built With

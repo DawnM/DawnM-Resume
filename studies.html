@@ -20,95 +20,116 @@
 </head>
 
 <body>
-<!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
+  <!-- Header includes my name, job title & button to email me. To be added later: button for switching to site optimised for those with visual impairment.  -->
   <header>  
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="DawnM - Developer and Designer" src="assets/images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="assets/images/DawnM-resume-brand.svg">
           </a>
-          <button type="button" class="btn btn-default navbar-btn"><a href="mailto:info@dawnm.uk"><img src="assets/images/navicon-emailme.svg" alt="Email me button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
+          <a class="btn btn-default navbar-btn" href="mailto:info@dawnm.uk"><img src="assets/images/navicon-emailme.svg" alt="Email me button" title="Email me"></a>
+
+          <!-- on large screens the navs that are at the bottom for mobile devices will show at the top per user expectations -->
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="Work experience"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="Skills"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="Studies"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About me"></a>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="study-panels">
-  <!-- WEB DEV STUDY STACK -->
-    <div class="panel panel-default studies-web">
-      <!-- Default panel contents -->
-      <div class="panel-heading">Developer Studies</div>
-      <div class="panel-body">
-        <img src="assets/images/pie-studies-developer.svg" class="img-responsive center-block pie">
-      </div>
+  <main class="study-panels container-fluid">
 
-    <!-- List group -->
-      <ul class="list-group">
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenm.svg" alt="???">Full Stack</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenl.svg" alt="???">Front End Foundations</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenl.svg" alt="???">Front End Formations</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenl.svg" alt="???">Shaping Up with AngularJS</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greend.svg" alt="???">Foundation in Web Development</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greend.svg" alt="???">Foundation in Mobile App Development</li>
-      </ul>
+    <!-- Web Development studies panel -->
+    <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-4 col-lg-offset-0">
+      <div class="panel panel-default studies-web">
+        <!-- Course category title, and pie chart -->
+        <div class="panel-heading">Developer Studies</div>
+        <div class="panel-body">
+          <img src="assets/images/pie-studies-developer.svg" class="img-responsive center-block pie">
+        </div>
+
+        <!-- List of web related courses done, linking to their info pages on the sites that provide the course -->
+        <ul class="list-group">
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenl.svg" alt="bullet point">
+            <a href="https://courses.codeinstitute.net/program/FullstackWebDeveloper" target="_blank">Full Stack Development</a>
+          </li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenm.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.codeschool.com/learn/html-css" target="_blank">HTML / CSS</a>
+          </li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenm.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.codeschool.com/learn/javascript" target="_blank">Javascript</a>
+          </li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greenm.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.codeschool.com/courses/shaping-up-with-angularjs" target="_blank">AngularJS</a>
+          </li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greend.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.shawacademy.com/courses/technology/learn-web-development-online?from=nav" target="_blank">Web Development</a>
+          </li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-greend.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.shawacademy.com/courses/technology/learn-mobile-application-development-online?from=nav" target="_blank">Mobile App Development</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-  <!-- DESIGN STUDYIES -->
-    <div class="panel panel-default studies-design">
-      <!-- Default panel contents -->
-      <div class="panel-heading">Design Studies</div>
-      <div class="panel-body">
-        <img src="assets/images/pie-studies-design.svg" class="img-responsive center-block pie">
-      </div>
+    <!-- Graphic Design studies panel -->
+    <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-4 col-lg-offset-0">
+      <div class="panel panel-default studies-design">
+        <!-- Course category title, and pie chart -->
+        <div class="panel-heading">Design Studies</div>
+        <div class="panel-body">
+          <img src="assets/images/pie-studies-design.svg" class="img-responsive center-block pie">
+        </div>
 
-      <!-- List group -->
-      <ul class="list-group">
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkm.svg" alt="???">UX + Web Design Master Course</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Foundation in Web Design</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Foundation in Graphic Design</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Advanced Graphic Design</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Smartphone Photography</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkd.svg" alt="???">Adobe Illustrator - Basic</li>
-      </ul>
+        <!-- List of design related courses done, linking to their info pages on the sites that provide the course -->
+        <ul class="list-group">
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkm.svg" alt="???">UX + Web Design Master Course</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Foundation in Web Design</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Foundation in Graphic Design</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Advanced Graphic Design</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkl.svg" alt="???">Smartphone Photography</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-pinkd.svg" alt="???">Adobe Illustrator - Basic</li>
+        </ul>
+      </div>
     </div>
 
-  <!-- GENERAL STUDIES -->
-    <div class="panel panel-default studies-general">
-      <!-- Default panel contents -->
-      <div class="panel-heading">General Studies</div>
-      <div class="panel-body">
-        <img src="assets/images/pie-studies-general.svg" class="img-responsive center-block pie">
-      </div>
+    <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0">
+      <!-- General studies panel -->
+      <div class="panel panel-default studies-general">
+        <!-- Course category title, and pie chart -->
+        <div class="panel-heading">General Studies</div>
+        <div class="panel-body">
+          <img src="assets/images/pie-studies-general.svg" class="img-responsive center-block pie">
+        </div>
 
-      <!-- List group -->
-      <ul class="list-group">
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">Trello</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">Project Management Basics</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">Writing Effective Business Comms</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">MS Word - Basic + Advanced</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">MS Excel - Basic + Advanced</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">MS Outlook</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluel.svg" alt="???">English for Business</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-blued.svg" alt="???">Welsh (ongoing)</li>
-        <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-blued.svg" alt="???">Dutch (ongoing)</li>
-      </ul>
+        <!-- List of admin and other general courses done, linking to their info pages on the sites that provide the course -->
+        <ul class="list-group">
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">Trello</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">Project Management Basics</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">Writing Effective Business Comms</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">MS Word - Basic + Advanced</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">MS Excel - Basic + Advanced</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluem.svg" alt="???">MS Outlook</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-bluel.svg" alt="???">English for Business</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-blued.svg" alt="???">Welsh (ongoing)</li>
+          <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-blued.svg" alt="???">Dutch (ongoing)</li>
+        </ul>
+      </div>
     </div>
   </main>
 
 
-<!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
+  <!-- footer contains the navbar on all mobile screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it moves to the top nav  -->
   <footer class="hidden-md hidden-lg">
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid bottom-nav">
-        <button type="button" class="btn btn-default navbar-btn"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
+        <a class="btn btn-default navbar-btn" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About me"></a>
+        <a class="btn btn-default navbar-btn" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="My Studies"></a>
+        <a class="btn btn-default navbar-btn" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="My Skills"></a>
+        <a class="btn btn-default navbar-btn" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="Work experience"></a>
       </div>
     </nav>
   </footer>

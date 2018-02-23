@@ -11,8 +11,6 @@
   <meta name="author" content="DawnM">
 
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
   <link rel="icon" type="image/png" href="assets/favicomatic/favicon-32x32.png" sizes="32x32" />
@@ -20,49 +18,135 @@
 </head>
 
 <body>
-  <!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
+
+  <!-- Header includes my name, job title & button to email me. To be added later: button for switching to site optimised for those with visual impairment.  -->
   <header>  
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="DawnM - Developer and Designer" src="assets/images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="assets/images/DawnM-resume-brand.svg">
           </a>
-          <button type="button" class="btn btn-default navbar-btn"><a href="mailto:info@dawnm.uk"><img src="assets/images/navicon-emailme.svg" alt="Email me button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
+          <a class="btn btn-default navbar-btn" href="mailto:info@dawnm.uk" target="_blank"><img src="assets/images/navicon-emailme.svg" alt="Email me button" title="Email Me"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="My Work Experience"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="My Skills"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="My Studies"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About Me"></a>
         </div>
       </div>
     </nav>
   </header>
 
-<!-- Main is a stack of pages with content on - essentially it's only this content that changes for each web page -->
-  <main class="container-fluid skills"> 
-    <div class="row">
-      <div class="languages-img col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
-        <p class="sr-only">Speech bubble containing the languages HTML5, CSS3, JavaScript, Bootstrap, Python, jQuery, and AngularJS</p>
-      </div>
+  
+  <main class="panels container-fluid">
 
-      <div class="platforms-img col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0">
-        <p class="sr-only">Computer screen showing the programs and platforms Adobe Illustrator, Adobe Xd, Adobe Photoshop, Github, Wordpress, Slack, Terminal, Sublime, repl.it, and Codepen</p>
+    <!-- Languages panel -->
+    <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
+      <div class="panel panel-default skills-languages">
+        <!-- Panel title, and image depicting languages / frameworks I know -->
+        <div class="panel-heading">Languages</div>
+        <div class="panel-body">
+          <img src="assets/images/skills-languages.svg" class="img-responsive center-block skills-image">
+        </div>
+
+        <!-- List of languages / frameworks I know -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-html.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.w3schools.com/html/html5_intro.asp" target="_blank">HTML / HTML5</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-css.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" target="_blank">CSS / CSS3</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-javascript.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.javascript.com" target="_blank">JavaScript</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-bootstrap.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-python.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.python.org" target="_blank">Python</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-jquery.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://jquery.com" target="_blank">jQuery</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-angularjs.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://angularjs.org" target="_blank">AngularJS</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="coming-soon hidden-xs hidden-sm col-md-8 col-md-offset-2">
-      <p>+ + + Coming Soon: MySQL / APIs / MongoDB / Django and more... + + +</p>
+
+    <!-- Platforms panel -->
+    <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 col-lg-4 col-lg-offset-2">
+      <div class="panel panel-default skills-platforms">
+        <!-- Panel title, and image depicting platforms / programs I work on -->
+        <div class="panel-heading">Platforms</div>
+        <div class="panel-body">
+          <img src="assets/images/skills-platforms.svg" class="img-responsive center-block skills-image">
+        </div>
+
+        <!-- List of platforms / programs I work on -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-illustrator.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.adobe.com/uk/products/illustrator.html" target="_blank">Adobe Illustrator</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-adobexd.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.adobe.com/uk/products/xd.html" target="_blank">Adobe Xd</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-photoshop.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank">Adobe Photoshop</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-github.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://github.com" target="_blank">Github</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-wordpress.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://wordpress.org" target="_blank">Wordpress</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-slack.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://slack.com" target="_blank">Slack</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-terminal.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://en.wikipedia.org/wiki/Terminal_(macOS)" target="_blank">Mac Terminal</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-sublime.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://www.sublimetext.com" target="_blank">Sublime Text</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-replit.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://repl.it" target="_blank">repl.it</a>
+          </li>
+          <li class="list-group-item">
+            <img class="pie-bullet" src="assets/images/skills-bullet-codepen.svg" alt="bullet point" aria-hidden="true">
+            <a href="https://codepen.io" target="_blank">Codepen</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
-  
 
-  <!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
+  <!-- Footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
   <footer class="hidden-md hidden-lg">
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid bottom-nav">
-        <button type="button" class="btn btn-default navbar-btn"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
+        <a class="btn btn-default navbar-btn" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About me"></a>
+        <a class="btn btn-default navbar-btn" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="My Studies"></a>
+        <a class="btn btn-default navbar-btn" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="My Skills"></a>
+        <a class="btn btn-default navbar-btn" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="Work experience"></a>
       </div>
     </nav>
   </footer>

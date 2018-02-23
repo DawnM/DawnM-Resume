@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <title>DawnM | Work Sectors</title>
+  <title>DawnM | Work Experience</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +11,6 @@
   <meta name="author" content="DawnM">
 
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
   <link rel="icon" type="image/png" href="assets/favicomatic/favicon-32x32.png" sizes="32x32" />
@@ -20,25 +18,24 @@
 </head>
 
 <body>
-  <!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
+  <!-- Header includes my name, job title & button to email me. To be added later: button for switching to site optimised for those with visual impairment.  -->
   <header>  
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="DawnM - Developer and Designer" src="assets/images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="assets/images/DawnM-resume-brand.svg">
           </a>
-          <button type="button" class="btn btn-default navbar-btn"><a href="mailto:info@dawnm.uk"><img src="assets/images/navicon-emailme.svg" alt="Email me button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
+          <a class="btn btn-default navbar-btn" href="mailto:info@dawnm.uk" target="_blank"><img src="assets/images/navicon-emailme.svg" alt="Email me button" title="Email Me"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="My Work Experience"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="My Skills"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="My Studies"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About Me"></a>
         </div>
       </div>
     </nav>
   </header>
 
-<!-- Main is a stack of pages with content on - essentially it's only this content that changes for each web page -->
   <main class="work container-fluid"> 
 
       <!-- Work History Timeline -->  
@@ -76,19 +73,21 @@
         </div>
       </div>
       
+      <!-- Panel showing Industry sector split -->
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-2">
         <div class="panel panel-default">
-          <!-- Default panel contents -->
+          <!-- Panel title, pie chart, and explanatory sentence -->
           <div class="panel-heading">Industry Sector Experience</div>
           <div class="panel-body">
             <img src="assets/images/pie-work.svg" class="img-responsive center-block pie">
+            <small>Portion of my career spent in each industry:</small>
           </div>
 
-          <!-- List group -->
+          <!-- List of industry sectors in which I have worked, with percentage indicating the portion of my career spent in that sector -->
           <ul class="list-group">
-            <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-studies.svg" alt="bullet">Studying - 10%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-studies.svg" alt="bullet">Student - 10%</li>
             <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-design.svg" alt="bullet">Design - 11%</li>
-            <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-software.svg" alt="bullet">Software Development 12%</li>
+            <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-software.svg" alt="bullet">IT Solutions 12%</li>
             <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-tourism.svg" alt="bullet">Tourism - 16%</li>
             <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-beauty.svg" alt="bullet">Beauty - 8%</li>
             <li class="list-group-item"><img class="pie-bullet" src="assets/images/pie-bullet-work-insurance.svg" alt="bullet">Insurance - 23%</li>
@@ -103,14 +102,14 @@
   </main>
 
 
-  <!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
+  <!-- Footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
   <footer class="hidden-md hidden-lg">
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid bottom-nav">
-        <button type="button" class="btn btn-default navbar-btn"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
+        <a class="btn btn-default navbar-btn" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About me"></a>
+        <a class="btn btn-default navbar-btn" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="My Studies"></a>
+        <a class="btn btn-default navbar-btn" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="My Skills"></a>
+        <a class="btn btn-default navbar-btn" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="Work experience"></a>
       </div>
     </nav>
   </footer>

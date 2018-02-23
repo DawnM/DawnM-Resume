@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <title>DawnM | Developer + Designer</title>
+  <title>DawnM | Resume</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +11,6 @@
   <meta name="author" content="DawnM">
 
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
   <link rel="icon" type="image/png" href="assets/favicomatic/favicon-32x32.png" sizes="32x32" />
@@ -20,30 +18,31 @@
 </head>
 
 <body>
-  <!-- Header includes my name, tagline & button to email me. this will change to a vis-impairment button when I have time  -->
+  <!-- Header includes my name, job title & button to email me. To be added later: button for switching to site optimised for those with visual impairment.  -->
   <header>  
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">
-            <img alt="DawnM - Developer and Designer" src="assets/images/dawnm-brand.svg">
+            <img alt="DawnM - Developer and Designer" src="assets/images/DawnM-resume-brand.svg">
           </a>
-          <button type="button" class="btn btn-default navbar-btn"><a href="mailto:info@dawnm.uk"><img src="assets/images/navicon-emailme.svg" alt="Email me button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-          <button type="button" class="btn btn-default navbar-btn hidden-xs hidden-sm"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
+          <a class="btn btn-default navbar-btn" href="mailto:info@dawnm.uk" target="_blank"><img src="assets/images/navicon-emailme.svg" alt="Email me button" title="Email Me"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="My Work Experience"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="My Skills"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="My Studies"></a>
+          <a class="btn btn-default navbar-btn hidden-xs hidden-sm" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About Me"></a>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Main is a stack of pages with content on - essentially it's only this content that changes for each web page -->
+  <!-- Main content of the page. Should look like a stack of paper pages with info on. -->
   <main class="container-fluid"> 
     <div class="row row-table">
-
+      
+      <!-- this div will create the BOTTOM 'piece of paper' in the stack. None of the content needs to be visible but it does need to be included to ensure this 'piece of paper' is the same size as the top 'piece of paper' with the visible content. Bootstrap hidden classes and css visibility used so that this content doesn't interfere with screen readers. -->
       <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-7 col-md-offset-1 col-lg-8 col-lg-offset-1 paper-stack">
-        <div class="page bottom-page"> <!-- make all content invisible - needed for page size matching only -->
+        <div class="page bottom-page">
           <div class="clearfix">
             <img src="assets/images/author-img-grey.svg" alt="Author icon" class="author-img"> 
             <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p>
@@ -78,7 +77,8 @@
           </div>  
         </div>
 
-        <div class="page middle-page"> <!-- make all content invisible - needed for page size matching only -->
+        <!-- this div will create the MIDDLE 'piece of paper' in the stack. None of the content needs to be visible but it does need to be included to ensure this 'piece of paper' is the same size as the top 'piece of paper' with the visible content. Bootstrap hidden classes and css visibility used so that this content doesn't interfere with screen readers. -->
+        <div class="page middle-page">
           <div class="clearfix">
             <img src="assets/images/author-img-grey.svg" alt="Author icon" class="author-img"> 
             <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p>
@@ -113,7 +113,8 @@
           </div>
         </div>
 
-        <div class="page top-page"> <!-- this is the page of content that will be shown -->
+        <!-- this div will create the TOP 'piece of paper' in the stack. All content is visible, according to screen size settings. -->
+        <div class="page top-page">
           <div class="clearfix">
             <img src="assets/images/author-img-grey.svg" alt="Author icon" class="author-img"> 
             <p>I have completed various graphic design, web design, and web development courses online over the past 2 years.  I would like to join a company that offers exposure to a range of projects where I can use and develop my new skills. A company with a focus on people or the environment would be ideal, but is by no means essential.</p>
@@ -161,14 +162,14 @@
     </div>
   </main>
 
-  <!-- footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
+  <!-- Footer contains the navbar on all portrait screens, so that its closer to the user's hand. On tablet landscape screens, and desktop, it should show in the top nav  -->
   <footer class="hidden-md hidden-lg">
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container-fluid bottom-nav">
-        <button type="button" class="btn btn-default navbar-btn"><a href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button"></a></button>
-        <button type="button" class="btn btn-default navbar-btn"><a href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button"></a></button>
+        <a class="btn btn-default navbar-btn" href="index.html"><img src="assets/images/navicon-author.svg" alt="Home button" title="About Me"></a>
+        <a class="btn btn-default navbar-btn" href="studies.html"><img src="assets/images/navicon-study.svg" alt="Studies button" title="My Studies"></a>
+        <a class="btn btn-default navbar-btn" href="skills.html"><img src="assets/images/navicon-skills.svg" alt="Skills button" title="My Skills"></a>
+        <a class="btn btn-default navbar-btn" href="work.html"><img src="assets/images/navicon-work.svg" alt="Work button" title="My Work Experience"></a>
       </div>
     </nav>
   </footer>

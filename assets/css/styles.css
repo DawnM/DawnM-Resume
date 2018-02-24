@@ -341,6 +341,17 @@ main div:nth-child(6) {
   letter-spacing: 0.1em;
 }
 
+.work-panel,
+.work-panel a {
+  color: #1b1b1b;
+  font-family: "Ubuntu Mono", "Ubuntu", sans-serif;
+}
+
+.helptext {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
 
 /* ---------------- FOOTER - all pages ---------------- */
 

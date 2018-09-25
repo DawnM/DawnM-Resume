@@ -64,9 +64,9 @@ As this is purely an HTML and CSS website, there was no automated testing.  The 
 
 No contributors are permitted as the purpose of the site is to showcase my personal coding proficiency.
 
-## Versioning
+## Version Control
 
-I use [GitHub](https://github.com) for versioning. For the versions available, see my [cv-website repo](https://github.com/DawnM/cv-website). 
+I use [GitHub](https://github.com) for versioning. For the versions available, see my [cv-website repo](https://dawnm.github.io/DawnM-Resume/). 
 
 ## Authors
 
